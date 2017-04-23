@@ -8,3 +8,70 @@ and open the template in the editor.
     Author     : agonzalez
 */
 
+
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+body {
+    font-family: 'Tangerine', cursive;
+    font-size: 1.7em;
+    margin: 0 20px;
+
+}
+
+header {
+    border: 1px solid red;
+    height: 100px;
+    background-color: #5b7989;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+header h1 {
+    color: white;    
+    text-shadow:2px 2px #02010a;
+    border: 1px yellow solid;
+    display: inline-block
+}
+
+header nav {
+    border: 1px blue solid;
+    display: inline-block;
+    font-size: 1.25em;
+    float: right;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    text-shadow:2px 2px #02010a;
+    font-weight: bold;
+    margin-left: 1em;
+    
+}
+
+header nav a:hover {
+    font-size: 1.50em;
+    text-shadow:2px 2px #82c3a6;
+}
+
+section {
+    border: 1px solid green;
+    height: 100px;  
+}
+
+section article {
+    border: 1px solid blue;
+    height: 100px; 
+}
+
+footer {
+    border: 1px solid black;
+    height: 100px;
+}
+
+#imagenCentral {
+    background-color: #82c3a6;
+}
