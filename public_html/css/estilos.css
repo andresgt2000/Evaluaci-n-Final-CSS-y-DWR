@@ -59,38 +59,35 @@ header nav a:hover {
 }
 
 section {
-    /*border: 1px solid green; */
-    width: 100%;
     min-height: 200px;
     height: auto;
 }
 
-section article {
-    width: 100%;
-    border: 1px solid blue;
+section div {    
+    /*border: 1px solid blue;*/
     min-height: 150px;
     height: auto;
+    vertical-align: middle;
+
+    
 }
 
 footer {
-    /*border: 1px solid black;*/
     border-radius: 0 0 10px 10px; 
     height: auto;
     background-color: #C6d5c5;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row;
-    flex-flow: row;
-    
-    
+    flex-flow: row;    
 }
 
-footer article {
-    border: 1px solid green;
+footer div {
+    /*border: 1px solid green;*/
     width: 24%;    
     min-height: 200px;
     height: auto;
-    padding: 0 0.5em;
+    padding: 0.5em;
     margin-left: 2px;
     text-align: justify;
     
@@ -100,6 +97,13 @@ footer article {
     background-color: #82c3a6;
     min-height: 200px;
     height: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+
+#imagenCentral img {
+    border: solid 1px black;   
 }
 
 #imagenSecundaria {
@@ -112,11 +116,31 @@ footer article {
     
 }
 
-#imagenSecundaria article {
+#imagenSecundaria div {
+    /*border: 1px solid blue;*/
     width: 49%;
     min-height: 300px;
     height: auto;
     padding: 0 0.25em;
     margin-left: 2px;
     text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    
+}
+
+#imagenSecundaria div img {
+    border: solid 1px black;
+}
+
+#imagenc1 {
+    width: 40%;
+}
+
+#imagens1 {
+    width: 50%
+}
+
+#imagens3 {
+    width: 35%;
 }
