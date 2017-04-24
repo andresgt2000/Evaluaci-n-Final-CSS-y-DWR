@@ -17,7 +17,7 @@ and open the template in the editor.
 body {
     font-family: 'Tangerine', cursive;
     font-size: 1.7em;
-    margin: 0 20px;
+    margin: 0 5px;
 
 }
 
@@ -60,9 +60,13 @@ header nav a:hover {
 
 section {
     /*border: 1px solid green; */
+    width: 100%;
+    min-height: 200px;
+    height: auto;
 }
 
 section article {
+    width: 100%;
     border: 1px solid blue;
     min-height: 150px;
     height: auto;
@@ -72,18 +76,24 @@ footer {
     /*border: 1px solid black;*/
     border-radius: 0 0 10px 10px; 
     height: auto;
-    text-align: center;
     background-color: #C6d5c5;
-    padding: 5px 5px 0 5px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    
+    
 }
 
 footer article {
     border: 1px solid green;
-    width: 24%;
-    display: inline-flex;
-    flex-direction: row;
-    min-height: 150px;
+    width: 24%;    
+    min-height: 200px;
     height: auto;
+    padding: 0 0.5em;
+    margin-left: 2px;
+    text-align: justify;
+    
 }
 
 #imagenCentral {
@@ -94,13 +104,19 @@ footer article {
 
 #imagenSecundaria {
     background: #d5c75f;
-    text-align: center;
-    padding: 5px 5px 0 5px;
+    text-align: center;  
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
     
 }
 
 #imagenSecundaria article {
-    width: 49.5%;
-    display: inline-flex;
-    flex-direction:row;
+    width: 49%;
+    min-height: 300px;
+    height: auto;
+    padding: 0 0.25em;
+    margin-left: 2px;
+    text-align: center;
 }
