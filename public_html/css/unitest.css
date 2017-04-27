@@ -23,3 +23,17 @@ footer article {
     height: 300px;
     margin: 5px;
 }
+
+
+div a {
+    display: block;
+    height: 100px;
+    width: 100px;
+    background: blueviolet;
+    background-image: url("../img/iconos/googleplus.png");
+    background-repeat: no-repeat;    
+    background-size:contain;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+}

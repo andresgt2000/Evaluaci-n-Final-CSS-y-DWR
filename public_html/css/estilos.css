@@ -8,18 +8,25 @@ and open the template in the editor.
     Author     : agonzalez
 */
 
-
 * {
     margin: 0;
     padding: 0;    
 }
 
 body {
-    font-family: 'Tangerine', cursive;
-    font-size: 1.7em;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.1em;
     margin: 0 5px;
-
+    background-color: #02010a;
 }
+#contenido {
+    min-height: 100px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+/*
+*   Definición de propiedades del header y sus hijos
+*/
 
 header {
     /*border: 1px solid red;*/
@@ -32,8 +39,7 @@ header {
 header h1 {
     /*border: 1px yellow solid;*/
     color: white;    
-    text-shadow:2px 2px #02010a;
-    
+    text-shadow:2px 2px #02010a;    
     display: inline-block
 }
 
@@ -72,6 +78,10 @@ section div {
     
 }
 
+/**
+* Definición de tag footer
+*/
+
 footer {
     border-radius: 0 0 10px 10px; 
     height: auto;
@@ -97,6 +107,10 @@ footer div h2 {
     text-align: center;
 }
 
+/**
+* Definición de comportamientos de sección de imagenes
+*/
+
 #imagenCentral {
     background-color: #82c3a6;
     min-height: 200px;
@@ -105,9 +119,9 @@ footer div h2 {
     padding: 10px;
 }
 
-
-#imagenCentral img {
-    border: solid 1px black;   
+img {
+    /*border: solid 2px black; */
+    box-shadow: 2px 2px 2px  #02010a;
 }
 
 #imagenSecundaria {
@@ -116,8 +130,7 @@ footer div h2 {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row;
-    flex-flow: row;
-    
+    flex-flow: row;    
 }
 
 #imagenSecundaria div {
@@ -133,10 +146,14 @@ footer div h2 {
 }
 
 #imagenSecundaria div img {
-    border: solid 1px black;
+    border: solid 2px black;
 }
 
-#imagenc1 {
+/**
+* Definición de propiedades y animaciones de las imágenes
+*/
+
+#imagenc1 {   
     width: 40%;
 }
 
@@ -148,17 +165,60 @@ footer div h2 {
     width: 35%;
 }
 
-#redesSociales a {
-    border: solid red 1px;
-    display: inline-block ;
-    height: 64px;
-    width: 64px;
-    margin: 2px;
-    
+#imagens1:hover {
+    -ms-transform: rotate(10deg); /* IE 9 */
+    -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+    transform: rotate(10deg); 
+    border: solid 2px #82c3a6;
+    box-shadow: 2px 2px 2px #82c3a6;
 }
 
-.facebook {
-    background-image: url('../img/iconos/facebook500.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+/**
+* Definiciónde de comportamiento de elementos de la columna de redes sociales.
+*/
+
+#redesSociales {
+    text-align: right;
+}
+
+#redesSociales a {
+    /*border: solid red 1px;*/
+    display: inline-block ;
+    height: 32px;
+    width: 32px;
+    margin: 10px;   
+}
+
+#redesSociales a span {
+    visibility: hidden;
+}
+
+a.facebook {
+    background-image: url("../img/iconos/facebook.png");
+    background-repeat: no-repeat; 
+    background-size:contain;
+}
+
+a.facebook:hover {
+    box-shadow: 5px 5px 5px royalblue;
+}
+
+a.google {
+    background-image: url("../img/iconos/googleplus.png");
+    background-repeat: no-repeat; 
+    background-size:contain;
+}
+
+a.google:hover {
+    box-shadow: 5px 5px 5px tomato;
+}
+
+a.twitter {
+    background-image: url("../img/iconos/twitter.png");
+    background-repeat: no-repeat; 
+    background-size:contain;
+}
+
+a.twitter:hover {
+    box-shadow: 5px 5px 5px  darkcyan;
 }
