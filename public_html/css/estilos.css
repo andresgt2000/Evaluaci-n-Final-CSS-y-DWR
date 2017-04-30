@@ -20,22 +20,19 @@ body {
     background-color: #02010a;
 }
 #contenido {
-    min-height: 100px;
     max-width: 900px;
     margin: 0 auto;
 }
 
 h1 {
-    /*border: 1px yellow solid;*/
     color: white;    
-    text-shadow:2px 2px #02010a;    
-    display: inline-block;
+    text-shadow:2px 2px #02010a;
     font-size: 2.5em;
 }
 
 h2 {
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.15em;
 }
 
 a {
@@ -52,20 +49,21 @@ a:hover {
 */
 
 header {
-    /*border: 1px solid red;*/
     height: auto;    
     background-color: #5b7989;
     border-radius: 10px 10px 0 0;
     padding: 5px 5px 20px 5px;
+    animation-name: slidein;
+    animation-duration: 4s;
+}
+
+header h1 {
+  display: inline-block;
 }
 
 header nav {
-    /*border: 1px blue solid;*/
-    display: inline-block;
     font-size: 1.25em;
-    float: right;
     margin: 5px;
-    
 }
 
 header nav a {
@@ -83,14 +81,12 @@ header nav a:hover {
 }
 
 section {
-    min-height: 250px;
+    display: inline-block;
     height:auto;
 }
 
 section div {    
-    /*border: 1px solid blue;*/
     display: block;
-    vertical-align: middle;
 }
 
 /**
@@ -101,15 +97,10 @@ footer {
     border-radius: 0 0 10px 10px; 
     height: auto;
     background-color: #C6d5c5;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row;
-    flex-flow: row;    
+   
 }
 
 footer div {
-    /*border: 1px solid green;*/
-    width: 24%;    
     height: auto;
     padding: 0.5em;
     margin-left: 2px;
@@ -127,38 +118,28 @@ footer div {
 }
 
 #imagenCentral div {
-    border: 1px red solid;
     width: 100%;
+    margin: 10px 0;
 }
 
 img {
-    /*border: solid 2px black; */
     box-shadow: 2px 2px 2px  #02010a;
 }
 
 #imagenSecundaria {
     background: #d5c75f;
-    text-align: center;  
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row;
-    flex-flow: row;    
+    text-align: center;    
 }
 
 #imagenSecundaria div {
-    /*border: 1px solid blue;*/
-    width: 49%;
-    min-height: 300px;
     height: auto;
     padding: 0 0.25em;
-    margin-left: 2px;
     text-align: center;
-    vertical-align: middle;
-    padding: 10px;
 }
 
-#imagenSecundaria div img {
+#imagenSecundaria div img {    
     border: solid 2px black;
+    margin: 10px 0;
 }
 
 /**
@@ -168,18 +149,10 @@ img {
     background: #d5c75f;
     text-align: center;
     padding: 0 0 15px 0;
-    display: -webkit-flex;
-    display: flex wrap;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
 }
 
 #galeria div {
-    border: blue 1px solid;
-    width: 31%;
-    margin: 15px 5px 0px 10px;
-    /*padding: 2px 2px 1px 2px;*/
-    
+    margin: 15px 5px 0px 10px;    
 }
 
 #galeria img {
@@ -187,11 +160,11 @@ img {
 }
 
 /**
-* Definición de propiedades y animaciones de las imágenes
+* Definición de clases de ancho de imagenes
 */
 
 #imagenc1 {   
-    width: 60%;
+    width: 75%;
 }
 
 #imagens1 {
@@ -232,7 +205,6 @@ img {
 }
 
 #redesSociales a {
-    /*border: solid red 1px;*/
     display: inline-block ;
     height: 24px;
     width: 100%;
@@ -254,7 +226,6 @@ img {
     height: 24px;
     box-shadow: none;
 }
-
 
 /**
 * Definición de clases de para enlaces de redes sociales y sus efectos
@@ -301,4 +272,85 @@ a.twitter:hover #lblTw {
 .sepia90 {
     -webkit-filter: sepia(90%); /* Safari 6.0 - 9.0 */
     filter: sepia(90%);
+    
+}
+
+/**
+* Definición de animaciones
+*/
+
+@keyframes slidein {
+    0% {
+        margin-top: 150%;
+    }
+    60% {
+        margin-top: -5%;
+    }
+    100% {
+        margin-top: 0%;
+    }
+}
+
+/**
+* Definicón de media Querys
+*/
+
+@media (min-width:320px) and (max-width: 899px) {
+    header h1 {
+        display: block;
+        text-align: center;
+        border:1px solid red;
+    }
+
+    header nav {
+        display: block;
+        text-align: center;
+        float: none;
+        border:1px solid red;
+    }
+    
+}
+
+@media screen and (min-width:900px) {
+    header h1 {
+        display: inline-block;
+    }
+
+    header nav {
+        display: inline-block;    
+        float: right;
+    }
+    
+    footer {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row;
+        flex-flow: row;   
+    }
+    
+    footer div {
+        width: 24%;    
+    }
+    
+    #imagenSecundaria {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row;
+        flex-flow: row;    
+    }
+    
+    #imagenSecundaria div {
+        width: 49%;
+    }
+        
+    #galeria {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+    
+    #galeria div {
+        width: 31%;
+    }
 }
