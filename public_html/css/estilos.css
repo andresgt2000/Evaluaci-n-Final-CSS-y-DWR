@@ -216,7 +216,7 @@ img {
 }
 
 #redesSociales a {
-    border: solid red 1px;
+    /*border: solid red 1px;*/
     display: inline-block ;
     height: 24px;
     width: 100%;
@@ -244,13 +244,6 @@ img {
 * Definición de clases de para enlaces de redes sociales y sus efectos
 */
 
-a.facebook {
-    /*background-image: url("../img/iconos/facebook.png");
-    background-repeat: no-repeat; 
-    background-size:contain;
-    background-position: right;*/
-}
-
 a.facebook:hover #imgFb {
     box-shadow: 5px 5px 5px royalblue;  
 }
@@ -259,23 +252,18 @@ a.facebook:hover #lblFb {
     display: inline-block;
 }
 
-
-a.google {
-    background-image: url("../img/iconos/googleplus.png");
-    background-repeat: no-repeat; 
-    background-size:contain;
+a.google:hover #imgGp {
+    box-shadow: 5px 5px 5px tomato;  
 }
 
-a.google:hover {
-    box-shadow: 5px 5px 5px tomato;
+a.google:hover #lblGp {
+    display: inline-block;
 }
 
-a.twitter {
-    background-image: url("../img/iconos/twitter.png");
-    background-repeat: no-repeat; 
-    background-size:contain;
-}
-
-a.twitter:hover {
+a.twitter:hover #imgTw {
     box-shadow: 5px 5px 5px  darkcyan;
+}
+
+a.twitter:hover #lblTw {
+    display: inline-block;
 }
