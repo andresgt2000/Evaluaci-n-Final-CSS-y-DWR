@@ -43,22 +43,9 @@ a {
     text-decoration: none;
 }
 
-a:link {
-    
-}
-
 a:hover {
   text-decoration: underline;  
 }
-
-a:visited {
-    
-}
-
-a:active{
-    
-}
-
 
 /*
 *   Definición de propiedades del header y sus hijos
@@ -66,10 +53,10 @@ a:active{
 
 header {
     /*border: 1px solid red;*/
-    height: 100px;
+    height: auto;    
     background-color: #5b7989;
     border-radius: 10px 10px 0 0;
-    padding: 5px;
+    padding: 5px 5px 20px 5px;
 }
 
 header nav {
@@ -77,6 +64,8 @@ header nav {
     display: inline-block;
     font-size: 1.25em;
     float: right;
+    margin: 5px;
+    
 }
 
 header nav a {
@@ -102,7 +91,6 @@ section div {
     /*border: 1px solid blue;*/
     display: block;
     vertical-align: middle;
-    margin: 10px 0;    
 }
 
 /**
@@ -122,12 +110,10 @@ footer {
 footer div {
     /*border: 1px solid green;*/
     width: 24%;    
-    /*min-height: 200px;*/
     height: auto;
     padding: 0.5em;
     margin-left: 2px;
-    text-align: justify;
-    
+    text-align: justify;    
 }
 
 /**
@@ -137,7 +123,12 @@ footer div {
 #imagenCentral {
     background-color: #82c3a6;    
     text-align: center;
-    padding: 10px;
+    padding: 0px;
+}
+
+#imagenCentral div {
+    border: 1px red solid;
+    width: 100%;
 }
 
 img {
@@ -168,6 +159,31 @@ img {
 
 #imagenSecundaria div img {
     border: solid 2px black;
+}
+
+/**
+* Definición de estructura de galeria
+*/
+#galeria {
+    background: #d5c75f;
+    text-align: center;
+    padding: 0 0 15px 0;
+    display: -webkit-flex;
+    display: flex wrap;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+#galeria div {
+    border: blue 1px solid;
+    width: 31%;
+    margin: 15px 5px 0px 10px;
+    /*padding: 2px 2px 1px 2px;*/
+    
+}
+
+#galeria img {
+    width: 99%;
 }
 
 /**
@@ -266,4 +282,23 @@ a.twitter:hover #imgTw {
 
 a.twitter:hover #lblTw {
     display: inline-block;
+}
+
+/**
+* Definición de clasea para galería
+*/
+
+.blur10 {
+    -webkit-filter: blur(10px); /* Safari 6.0 - 9.0 */
+    filter: blur(10px);
+}
+
+.grayscale100 {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.sepia90 {
+    -webkit-filter: sepia(90%); /* Safari 6.0 - 9.0 */
+    filter: sepia(90%);
 }
