@@ -22,7 +22,7 @@ body {
 
 #contenido {
     max-width: 900px;
-    min-width: 325px;
+    min-width: 319px;
     margin: 0 auto;
 }
 
@@ -75,11 +75,6 @@ header nav a {
     font-weight: bold;
     margin-left: 1em;
     
-}
-
-header nav a:hover {
-    font-size: 1.50em;
-    text-shadow:2px 2px #82c3a6;
 }
 
 /**
@@ -317,6 +312,11 @@ a.twitter:hover #lblTw {
         float: none;
     }
     
+    header nav a:hover {
+        font-size: 1em;
+        text-shadow:2px 2px #82c3a6;
+    }
+    
     footer {
         display: -webkit-flex;
         display: flex;
@@ -339,6 +339,11 @@ a.twitter:hover #lblTw {
     header nav {
         display: inline-block;    
         float: right;
+    }
+    
+    header nav a:hover {
+        font-size: 1.50em;
+        text-shadow:2px 2px #82c3a6;
     }
     
     footer {
