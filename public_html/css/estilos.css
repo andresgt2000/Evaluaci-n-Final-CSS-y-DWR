@@ -19,8 +19,10 @@ body {
     margin: 0 5px;
     background-color: #02010a;
 }
+
 #contenido {
     max-width: 900px;
+    min-width: 325px;
     margin: 0 auto;
 }
 
@@ -80,6 +82,10 @@ header nav a:hover {
     text-shadow:2px 2px #82c3a6;
 }
 
+/**
+* Definición de propiedades de tag section
+*/
+
 section {
     display: inline-block;
     height:auto;
@@ -97,14 +103,14 @@ footer {
     border-radius: 0 0 10px 10px; 
     height: auto;
     background-color: #C6d5c5;
+    width: 100%;
    
 }
 
 footer div {
     height: auto;
-    padding: 0.5em;
-    margin-left: 2px;
-    text-align: justify;    
+    padding: 10px;    
+    text-align: justify;
 }
 
 /**
@@ -237,14 +243,17 @@ a.facebook:hover #imgFb {
 
 a.facebook:hover #lblFb {
     display: inline-block;
+    text-shadow:1px 1px royalblue;
 }
 
 a.google:hover #imgGp {
-    box-shadow: 5px 5px 5px tomato;  
+    box-shadow: 5px 5px 5px tomato;
+
 }
 
 a.google:hover #lblGp {
     display: inline-block;
+    text-shadow:1px 1px tomato;
 }
 
 a.twitter:hover #imgTw {
@@ -253,6 +262,7 @@ a.twitter:hover #imgTw {
 
 a.twitter:hover #lblTw {
     display: inline-block;
+    text-shadow:1px 1px darkcyan;
 }
 
 /**
@@ -299,25 +309,24 @@ a.twitter:hover #lblTw {
     header h1 {
         display: block;
         text-align: center;
-        border:1px solid red;
     }
 
     header nav {
         display: block;
         text-align: center;
         float: none;
-        border:1px solid red;
     }
     
-        footer {
+    footer {
         display: -webkit-flex;
         display: flex;
         -webkit-flex-flow: column;
-        flex-flow: column;   
+        flex-flow: column;
     }
     
     footer div {
-        width: 100%;    
+        width: 90%;
+        margin: 0 auto;
     }
     
 }
